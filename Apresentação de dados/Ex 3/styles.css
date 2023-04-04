@@ -1,0 +1,45 @@
+table{
+    width: 100%;
+    
+}
+
+table, td, th{
+    text-align: center;
+    border: solid 1px #bababa;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.firstline{
+    color: gray;
+    text-transform: uppercase;
+}
+
+.price{
+    font-size: 3rem;
+    color: white;
+}
+
+.basico{
+    background-color: lightblue;
+}
+
+.padrao{
+    background-color: blue;
+}
+
+.avancado{
+    background-color: purple;
+}
+
+button{
+    padding: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+}

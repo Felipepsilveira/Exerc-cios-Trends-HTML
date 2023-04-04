@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+}
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    font-size: 18px;
+}
+
+.flex-text {
+    display: flex;
+    gap: 40px;
+}
+@media(max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 700px;
+
+    
+    }
+
+    .cards{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 80%));
+    }
+
+    .cardsdesafio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+@media(max-width: 768px) {
+    .container {
+       padding: 0 10px;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+    .flex-text {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .cards{
+        grid-template-columns: minmax(200px, 400px);
+        justify-content: center;
+    }
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    margin: 50px 0;
+    gap: 40px;
+
+
+}
+
+.cardsdesafio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+@media(max-width: 576px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+
+    
+    }
+
+    .cardsdesafio{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+}
